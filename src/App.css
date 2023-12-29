@@ -15,11 +15,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding-inline: 20px;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,10 +28,37 @@
   color: #61dafb;
 }
 
+.search-box {
+  display: flex;
+  gap: 20px;
+}
+
+.search-box span {
+  font-size: small;
+}
+
+.home {
+  height: 100vh;
+
+}
+
+.homepage-no-movie {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-no-movie span {
+  font-size: medium;
+  color: #76839e;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
